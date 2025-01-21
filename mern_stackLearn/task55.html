@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const myObject = {
+            val: 10,
+
+            Traditional: function (number) {
+                return this.val * number;
+            },
+
+            Arrow: (number) => {
+                return this.val * number;
+            }
+        };
+
+        console.log(" Traditional:", myObject.Traditional(5));
+        console.log("Arrow:", myObject.Arrow(5));
+
+    </script>
+</body>
+
+</html>
